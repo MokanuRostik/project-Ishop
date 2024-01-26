@@ -4,9 +4,9 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
+/* @import url('./reset.css');
 @import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./header.css'); */
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -26,7 +26,11 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+    
 
+}
+ul{
+  list-style: none;
 }
 .container {
 padding: 0 25px;
@@ -528,3 +532,304 @@ footer {
 
 /* ===========adaptive */
 
+@media screen and (max-width: 480px){
+ .item-preference_heart {
+  display: none;
+  list-style: none;
+ }
+ .nav {
+  display: none;
+ }
+ .title {
+  color: #FFF;
+    font-family: Lighthaus;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 114.9%;
+    /* 34.47px */
+ }
+ .line {
+  width: 199px;
+    height: 1px;
+ }
+ .sub_title {
+  color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 128.4%;
+    /* 25.68px */
+ }
+ .item_sub_header {
+color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 96.4%;
+  /* 15.424px */
+ }
+ .item_price_sub_header {
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 96.4%;
+    /* 15.424px */
+ }
+ .btn_sub_header {
+  width: 155px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-bottom: 300px;
+ }
+ .header {
+  background-image: url("../img/mobile/BG-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.darken-overlay {
+width: 260%;
+  height: 90%;
+  
+}
+.list_products {
+  list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Два столбца с равным размером */
+    grid-gap: 10px;
+}
+.item_products>img {
+  width: 134.697px;
+    height: 148.621px;
+    flex-shrink: 0;
+}
+.desc_products {
+  width: 135px;
+    height: 24px;
+    flex-shrink: 0;
+    color: #fff;
+      text-align: center;
+    font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 96.4%;
+      left: 10%;
+}
+.wrapper_list_products {
+      display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+.num_percent {
+  color: #FFF;
+  
+    text-align: center;
+    font-family: Mont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 950;
+    line-height: 96.4%;
+}
+.sub_header_line {
+  margin-top: 55px;
+}
+.title_products {
+  color: #031412;
+    text-align: center;
+    font-family: Lighthaus;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 74.9%;
+    /* 17.976px */
+}
+.item_selling {
+  width: 290px;
+    height: auto;
+    flex-shrink: 0;
+}
+.item_selling>img {
+      width: 290px;
+        height: 390px;
+}
+.list_selling {
+  display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+.price_selling{
+  color: #031412;
+    font-family: Mont;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 96.4%;
+    /* 19.28px */
+}
+.desc_selling {
+  color: #031412;
+    text-align: right;
+    font-family: Mont;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 96.4%;
+    /* 19.28px */
+}
+.btn_selling {
+  width: 290px;
+    height: 50px;
+    flex-shrink: 0;
+}
+.special-offer{
+  background-image: url("../img/mobile/Rectangle-18.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.desc_special_offer {
+  color: #FFF;
+    font-family: Lighthaus;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 74.9%;
+    /* 44.94px */
+}
+.desc_offer{
+  color: #FFF;
+    font-family: Mont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.4%;
+    /* 13.496px */
+    margin-top: 0;
+}
+.btn_special_offer {
+  margin-top: 18px;
+  margin-bottom: 150px;
+}
+.feedback_title {
+  color: #031412;
+    text-align: center;
+    font-family: Lighthaus;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 74.9%;
+    /* 17.976px */
+}
+.list_feedback {
+  display: block;
+}
+.name_user_feedback {
+  color: #031412;
+    font-family: Mont;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96.4%;
+    /* 17.352px */
+}
+.message_feedback {
+  color: #031412;
+    font-family: Mont;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 134.4%;
+    /* 18.816px */
+}
+.item_feedback{
+  height: auto;
+}
+.date_feedback{
+  color: #031412;
+    font-family: Mont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 134.4%;
+    /* 18.816px */
+}
+.title_choose_us {
+  color: #031412;
+    text-align: center;
+    font-family: Lighthaus;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.4%;
+    /* 31.776px */
+}
+.list_choose_up {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wrapper_choose_up_img {
+  width: 50px;
+    height: 50px;
+}
+.wrapper_choose_up_img>img{
+  width: 26.316px;
+    height: 26.316px;
+    flex-shrink: 0;
+}
+.item_choose_up>p{
+color: #031412;
+  font-family: Mont;
+  font-size: 12px;
+  width: 135px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 134.4%;
+}
+.item_choose_up {
+  width: 145px;
+  height: auto;
+}
+.right_footer {
+  display: flex;
+   
+    flex-flow: wrap;
+}
+.wrapper_footer {
+  display: block;
+}
+.title_right_footer {
+  color: #FFF;
+    font-family: Mont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 96.4%;
+    /* 15.424px */
+}
+.item_right_footer>a{
+  color: #FFF;
+    font-family: Mont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.4%;
+    /* 18.816px */
+    text-decoration-line: underline;
+}
+.list_right_footer {
+  margin-left: 0;
+}
+.logo>a>img {
+  width: 115px;
+    height: 31px;
+    flex-shrink: 0;
+}
+}

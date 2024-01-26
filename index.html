@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/project-Ishop/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    
+    <script type="module" crossorigin src="/project-Ishop/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/project-Ishop/assets/index-7613cd12.css">
+    <link rel="stylesheet" href="/project-Ishop/assets/vendor-3292bb28.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-liine">
+          <div class="logo">
+            <a href="#">
+              <img src="/project-Ishop/assets/logo-9f025458.png" alt="logo" />
+            </a>
+          </div>
+          <ul class="nav">
+            <li class="item-nav animate__animated animate__flipInX">Каталог</li>
+            <li class="item-nav animate__animated animate__flipInX">Новости</li>
+            <li class="item-nav animate__animated animate__flipInX">О нас</li>
+            <li class="item-nav animate__animated animate__flipInX">
+              Доставка
+            </li>
+            <li class="item-nav animate__animated animate__flipInX">
+              Контакты
+            </li>
+          </ul>
+          <ul class="list-preference">
+            <li class="item-preference">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANGSURBVHgB5Ve9ThtBEJ7Z5R8iXQokQhJhngAikeAikHMHndORCvMEJE9g06ULPAHwBJiSinUUIUNSmI4uhxQQ5RUYDLZvMns/5mydzfEnRconnb23nm++nbm53THA/waMmjRM06jWy2lAMcEWhuPUD2t1VNW9n6VOzvreT5mIMCmEnAACG8g5rEupKqpodRR2BenyGw8zbXxbdcRUqyMtKKXM8tBsw9tg3kqY1xAeNN9OEoktnkjc2JPtmxlhL0SUu/h+sKLH/bPTywJhtVlH85o5rYt2hfvMZEIQ7YZEFfIKz1VRBb9Lx8kB4mLgRSB9dIAMILHeiII5NY4ucD5kJk1ynEyIZ7P4G/27KzzwYfp3IIpILHiQgwjorADhrh+NTXx5PI4QKVVW0TXAC8hxlrJBUOXCfgqfzbxLOwK3bhMNOTHZyW7TJOJSWRU3OvJmp1cJYdkzr6dEXdykoQaiI1nDT78KTanbRDW6xFUuqBkiuch1QQnvBgpRZR8Fx4HtqHEn2Kpks0ZgawoOfNIbUwligggbtlLWY/MYlv+dEHAPyC5hwwMhyF8FvwpjcUlltVfSBaVfqXP1S8XlMWfCH9ld/KFTleArzddSXB9xCioC7mPV9STIgYI/aQyZUyY8EXgPyDT2CoF50SuvNkJlnoUnAm/HgW+rG/rywitzseZPmv0z05/hkdEULdKmrZTtVnWPqKwGUQsBWb03wyNB+wpHG2xSrrCOmneSoLAMSbQOjwT2dXPihY5GGRhcWydHvWOvnvN5leTbRM/YqFE9Pt2BB2BgNpnlxmDB04S1str/2lhQk+H4cNEBOcdmI2yZ7B57CdXjkwLcA54o5fxbqxv7P1UsqxIpXLHOKnL89Q6nJs2XwZuKeR/xVlHdAJyrH2dhG9lKqll/bBbfFkAZjrzvruJRolGHj4wia/Ge8VH9fBfuIt4s6jYH85fq4CjKVrZzUrVOz7Q4Ac7FSXuEaNuORAPhFrT2Y3yo5B3EL0H6dGd6TRfrCJj2KW3TeyfhKHEfSuuC20g0OspYohoSYkA/88Hx4U2H5At+zfzGwV3EiK4BfUNA+R4cmG+t3naIFXEYXstK/C8DvLOV4FCfNkEr/M/jLxmemgBQw3mCAAAAAElFTkSuQmCC" alt="heart" />
+            </li>
+            <li class="item-preference">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALUSURBVHgB7VbNUhNBEO6eDRgJFvFmlT+ENwhVIKkUFcebN/HoSfIEyBMQbt7AJ4C8Ad705ITykEQPeQNXS+6pkkAI2W17yO5mSSU7E3L1q9qtmd2e/uanu+dDmAJpWcg5Pu0QwhYC5ILPLf14iPtdVXdtfaGt4f3Sxo5AOEyyIaLKxWlzHyzg2BgtlAp7TPoh9kkBwScC+oJ4M/ecfnFbzi0/hutfZzWTT+OKM3J9G0gcBV2XnZfPVV3FbfQRCKKv4fYLpDd/VfMkya8AA4jEXkjK5/hylFRDn63P/9i6rfs+4YHJbyJxerMgoyAyBI/+x5P8GHRzi3JNwl2JESkftj19rgb4Ao4je8/JwwzE2bBtkypxm/jYqYmJsB2208XiMhigg2zc2KmJHQdbkWGqXwYDHPDkcKzXSrI1ptPCi42fQYC1OapXJ235SEq5nVpjJcmvMZ0cpN2gmXXYcXw7I9LNNRnPY50BYIBVyVyUhQqXw73YJ8X9GgIusQcdvTJyiLR/rpoVk0/rWj2GfJy33Y5qHIIFrGq1Rs/9o5yVp1Xe0oeD6eIj/SZdRgmqnsC3l6rxGf5jAqzPOMRccT0/70CeEHM3Dohcj5/utx8KpoAVcVbKbM+/2OGr9z0PmVQKXX6UrRIxBpdWHgTXJ3wPv2LSdIKpnlCeC8N26tmTq/7vs3qS38QCkiltHAzkTrRKBeiXeVUrXJlQP9xf5eQtw/D2ygoBB5nSeuKdPHGrtdzhYlAJumOVxygeyOdbHouAqIKRf9g5/b5rTTwqd7TysFWQtjJo7FaPyp1pZOsYGXSkg9NIrFdrK3eSyAFFdLlceZfbRmLe4ndBy+2o+jHcEYOxg1VzsL02E4c3DetmmBWE1dDn6HbfIs7IYiTQSJCCWSH8SIV0e72licRe388Of/iJmskGXt9xw3ZqvndLkaTinXSq2+rRPVfnWB9SLsyIJH//AKuGOvfFlwFGAAAAAElFTkSuQmCC" alt="user" />
+            </li>
+            <li class="item-preference">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQCSURBVHgBtVdPb1tFEJ/Z3feHlqRPQqji0NgRCDlIKC2nlEudfgHgDsQ+IBpVVZIvQC2OnCz1QCREa5A4cGqQuMe59IRU54Aop7wIifP6lj/2DjO774UktttIdUZyZnZ33v5mZ2Z/7wVXbte2CaCOSD3WrZ+f/f0bXKIoR7DImpyDRXLw9POlWh0uUZQG+AgImgiwjywa4SFcomBpfLFUayDCY57qA1E7jhXEscHUGBIdG0WJ1wZStnkOTFiHwhfSyFA5NiaspbG2xtHW/OpmLjimBCR0FkFxAJShwhbbhMSV9YshNh6LxUp5pShMy7xy3g+5ROAcPy1n4RM4cUjMw3+erH92o9nungAaUr0hH00pD5p7FCrSUOZBDCwiEFOFIVdCsIKLomKOgMIGVf7xIejp3pP1+RNASA8sHCQMSeCGuPHDsz+3YAry1/f3qgh6j4O8ZgBvqnKh080tour77Gof1VQkTVMbrJAndWYVIQ8rrgpTksHg4GZRThoA9M4AErk8xILXYEpi0CzKSbhS/flm254B5EHuATnXMCVx4OoQNu0VGKcWndrnpuHLgBlMSwirvnpuDCBfLStsAzC9puGrIdQJjoY7I4BDNewVTnT/44UKvKa82Px6LdxSoCGY0RPGTvsWllMexnoeXkN2H321xozTlnQxFfzEDZP7vc87fnm7RprJhrnRJpG2idFsR5DEGhItPMmaOTJhvox4PtY6rDGXMt8yd/Kc0VkU6YznmVujHAeDuyNceiIEOR+Q2QEytjPhL09VFNjLRxgGzF5ExbLcKQrlp8CvfhJ3DgeD5kIBNhaQeVhyzYBo+cG2MHN4FotdBU7+kCdKIW3l4aFwk4qR5Xfr7germ93z+4+e0Kkd0PAJWxnv3v3u9z92YIoyUsNGvZqp4ZXnSWSqXAtIEt1OALe01vtvXlGk4xjTVDxT4UmY1YpknL6RwtHAYZaUa2BvbXTsKwFF7tVrVVTxdgBVviHYpjjSGEdicyMF7V/OvrGisnH+1zHq5YUHZ9OqxgFudl/kiVPLbHa4KWyIi069GMtwQ5vIPJav6VM+fK8vdsLz0vp0qSo64TzNXOW0RrF/TlLqOTANtmQ6fUVKzSSQBqf1ndmZtfdvvJ1Vrs+0737z6y68RFaXP7wzdz1rvDf3ln139mr71saPdpyfmrQBHcE2f5msc4pWOPrne48f3Jnk21iqVY+Hrss5bfCX0Jqe1d1JvmrSBqwq8nkjZRKtkOqTNuGruCI1VHxpxZfJp/LvL/crFwbkAlh+uC8VVhiIg3/7MDFs6qGPDEMbMVsdHkX9CwN2uj1LCppGYc5DezQ8bs01H3Vggsi/B7FWLSVgCvrHx4Nv5e0+zvc/9gFKvyVkvYAAAAAASUVORK5CYII="
+                alt="shopping"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub_header">
+        <div class="container">
+          <div class="sub_header_line">
+            <h1 class="title">Хит продаж</h1>
+            <div class="line"></div>
+            <h2 class="sub_title">Дистиллятор для <br />эфирных масел</h2>
+            <ul class="list_sub_header">
+              <li class="item_sub_header">Цена</li>
+              <li class="item_price_sub_header">4 906 грн</li>
+            </ul>
+            <button class="btn_sub_header">Купить</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="our-products">
+      <div class="container">
+        <h2 class="title_products">Наша продукция</h2>
+        <ul class="list_products">
+          <li class="item_products">
+            <img
+              src="/project-Ishop/assets/photo-1-9f83213b.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Для эфирных масел</p>
+          </li>
+          <li class="item_products">
+            <img
+              src="/project-Ishop/assets/photo-2-ee0e94d2.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Для гидролатов</p>
+          </li>
+          <li class="item_products">
+            <img
+              src="/project-Ishop/assets/photo-3-484be61a.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Медная посуда</p>
+          </li>
+          <li class="item_products">
+            <img
+              src="/project-Ishop/assets/photo-4-178b069c.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Аксессуары из меди</p>
+          </li>
+          <li class="item_products">
+            <img
+              src="/project-Ishop/assets/photo-5-56e4fb20.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Индивидуальный заказ</p>
+          </li>
+          <li class="item_products">
+            <img
+              src="/project-Ishop/assets/photo-3-484be61a.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Скидки и предложения</p>
+            <p class="thirty_percent">-30 %</p>
+            <p class="fifty_percent">-50 %</p>
+            <p class="eighty_percent">-80%</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="best_selling">
+      <div class="container">
+        <h2 class="title_products title_selling">Лучшие продажи</h2>
+        <ul class="list_selling">
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-1-9f83213b.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-2-ee0e94d2.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-3-484be61a.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с<br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+        </ul>
+        <div class="wrapper-btn">
+          <button class="btn_selling">Перейти в каталог</button>
+        </div>
+      </div>
+    </section>
+    <section class="novelty">
+      <div class="container">
+        <h2 class="title_products title_selling">Новинки</h2>
+        <ul class="list_selling">
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-1-9f83213b.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-2-ee0e94d2.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с<br />
+                фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-3-484be61a.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с<br />
+                фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="wrapper-btn">
+          <button class="btn_selling">Перейти в каталог</button>
+        </div>
+      </div>
+    </section>
+    <section class="special-offer">
+      <div class="container">
+        <div class="wrapper_offer">
+          <p class="desc_special_offer">1 + 1 = 3</p>
+          <p class="desc_offer">
+            Закажите два товара и<br />
+            получите третий бесплатно
+          </p>
+          <button class="btn_special_offer btn_selling">
+            Перейти в каталог
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="container">
+        <h2 class="title_products title_selling">мы рекомендуем</h2>
+        <ul class="list_selling">
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-1-9f83213b.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-2-ee0e94d2.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-3-484be61a.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+        </ul>
+        <div class="wrapper-btn">
+          <button class="btn_selling">Перейти в каталог</button>
+        </div>
+      </div>
+    </section>
+    <section class="discount-section">
+      <div class="container">
+        <h2 class="title_products title_selling">Скидки</h2>
+        <ul class="list_selling">
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-1-9f83213b.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+            <div class="wraper_sale">Sale</div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-2-ee0e94d2.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с<br />
+                фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+            <div class="wraper_sale">Sale</div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="/project-Ishop/assets/photo-3-484be61a.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+            <div class="wraper_sale">Sale</div>
+          </li>
+        </ul>
+        <div class="wrapper-btn">
+          <button class="btn_selling">Перейти в каталог</button>
+        </div>
+      </div>
+    </section>
+    <section class="customer-feedback">
+      <div class="container">
+        <h2 class="feedback_title">Что думают о нас</h2>
+        <ul class="list_feedback">
+          <li class="item_feedback">
+            <h3 class="name_user_feedback">Елена Кузнецова</h3>
+
+            <p class="message_feedback">
+              Мой новый чайник стал настоящим украшением кухни. Его элегантный
+              дизайн привлекает внимание, а функциональность и качество работы
+              делают приготовление чая легким и приятным процессом. Рекомендую!
+            </p>
+            <p class="date_feedback">02.01.24</p>
+          </li>
+          <li class="item_feedback">
+            <h3 class="name_user_feedback">Александр Иванов</h3>
+            <p class="message_feedback">
+              Чайник, который я выбрал, поразил меня своей скоростью нагрева.
+              Заваривать чай стало намного быстрее! Кроме того, удобство
+              использования и функции безопасности делают его отличным выбором
+              для ежедневного использования.
+            </p>
+            <p class="date_feedback">10.01.24</p>
+          </li>
+          <li class="item_feedback">
+            <h3 class="name_user_feedback">Мария Петрова</h3>
+            <p class="message_feedback">
+              Покупка этого чайника оправдала мои ожидания. Он не только отлично
+              справляется с своим основным назначением, но и имеет
+              привлекательную цену. Очень доволен своим выбором!
+            </p>
+            <p class="date_feedback">23.01.24</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="why-choose-us">
+      <div class="container">
+        <h2 class="title_choose_us">Почему выбирают нас</h2>
+        <ul class="list_choose_up">
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI7SURBVHgBzZmNdYIwEMcPXwdgA7NB7QZ0gjoCI7QT6AbtBmUD2wnoBtIJwAlwgzRXL3L6Qj74/r+XF4HL8cufSBIFGFBSSqFKDEsTQqmSy0aHRYEqmE8Cwzqjz++wBNFj/Ydj57Sb87vI3BPsXELn9jCnTO6xa+hiPauLJvfYtXldtLnHYuZzkbmXWGLmcZG5l3vETu+ij3ssdloX2Q2d7rE22sUNBCpqSShUhcmwXlOtj1FnVZ6iKKrADxDbYof0Yy4oB9YnfazyFUZAlSBV1QtBxCyRVsUS/qqSqWRnCBB1eqvKIzQdNo3Lgu73re6RRarhTh3sCaBivdKfq1CYAOiYgW4Inp97w6CSyqKWSXrcruBCWozlUg8hT4ykB/pW7mAhQpbrLCUvi83jUiAZ3PE67JYCaYRjF2eFtMLBLeTkY5LB5dLnbSKbfcXokAwuC2k3CWRnOJZAQ77CwMKcveBYIhy0JQws37wr8NNYs4wzrw8gTtwnGF64KhKuICugbBaYPzC8cKWEr7W1LcjloGDJhlZF9bMtyAWoHRxjDOpOC1uQCxAXkMaleF/RdgE7bn3ED2CXAM/HS1NUSodfnvsVjEmgq+hF+uGIiWlGqOWt8JxwtNUTQfhqHr/BtlnEAJbLy5Y0kc3Pb6VtqmSzSfB2FBtvqXHiA9bSvmSgqeUeKYTK1DtMdHfTxCNP2gbqekquxAlLune50QEUc+oFsoAuoiRaNR332p7egday70qJxpyAgSU9/7L4A+OggG59iPsbAAAAAElFTkSuQmCC" alt="eye" />
+            </div>
+            <h3>Аутентичность</h3>
+            <p>
+              Медное перегонное оборудование используется для получения эфирных
+              масел с незапамятных времен.
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASPSURBVHgBtVmBlds2DIU6gTtB2AmiTlB1gjgTVBucOoGVCexMYGeCuw2kTGBvIGcCJRMgxOnzCNOSSN4leI9PFkQAnwBIgnRBryRm3thHadsH2wx+b9CEvtt2xfOrbX1RFD29kgrKJAuwArgaoARIb9s3BUzI4Pt78oOQb0+2fbKgr/Q7SADa1vFEo20tQKfKl7YdbBug49E2Q7+KJMS27aF8yAG3orNWgPcpMkVEobGPjqYwSsgk197jXdMF3y45IZWo2MeOppT5d022iIA8k58cQm6CXBTPoE+J9962L9boidLAGpqcIfTRyl0oh5BTOh/LmEGEtFNpUlMCIb3OsFVSLmEJuhtAgpyAPrkcnNMTAWvoLQQAnDqh4OER3jUJ/TfoO6QMTgueNag5oOCdlxTje7Jx9B9TVwMn1EmjdaANeJuI8UHrithtViMXGsMkGh1f5VGp+sj705oe8MqcdXNxYAAhtAt4h4jCJgBeYnDVQl/mtAlZLXoVHhRqAn4JI0eetr4jz2yhKr/WcnbISIFx0VEAsFWj6gDeAejQRvDFcK0G9Mjr+brN8KpPPQk1B0sHPOMAdgA8l3fCPynAc3ru1lEYbykO9CX8hRgA/2+7fX1HOB9p2i7/p2mL1KWaoyv5WlN+79G3tXo+wZDbgm/2cYTzg+X9RXGwI8mWDC9srZCUYP/Z3yf0uZDfvy9oP8jXm+8ArFLASYNFSvRhsYHUEmf8Kc6hdaDSr9CMB76lDjk5BIImeHehPwXyuxXjbj3eUoQYNezLCJWBAeG/ySWelqouzEcl+y7I7RhY5oSihafVZtRLCgP9Zk4ZT/s2A5j0P4J/t96xX+Zu+AGAgdMm1LPdP8jnnBS9TZAzV/J56s48GyUjZJy8Y1gdLU11qZP7NaTCtwv4bh0z7LfPMPTyuwvkdujXrthMDf0zBs1oQrDsy66zAqb3/SNkTCZIs5YWQV9Jx7MTqgOwjwqYq3wcX0a4h6dH7RX2h8AW7zXP1KEqgiYBaMdS9HBQK/I0ORyvVmBrCDkPt2owFfu0aAIjL7oV/8jBsrcCdFp5tEH1UYCdYFiMbReUVOzDf1P+KT2HGTkBf6Q4yHIxRXha+F1RUitPjewLEne2YRhtFLDVMxL7Zc5QHOhh1vPsJ0I9MzJX5nV4Nnxf5rlaNFbmRb252Fe5uVW8Zw9FlD3wfOG8nem7y/Dmsuf5PulvzkM8fxTp+H4dnSsJTeiICNAh1fPEwXmI5w93Latz1YIet8SdKc3uLtXzGug2AtR52dA6yCEx5FmejympEvs/qMllEvq/XEBQDi3kWpUgV7Ev9w6cd6WT5Hkt6Lw3IGdil2Qbvr8kqyiBOOHeae3aUbwgya8FpbyTcu6qeO7K0fXrbftsS70nSgMpcm7VWLwjzbnI7clf5IZ3pt8wgKfYGSjQ/2AfLU0D//ime32E5aDCWdMbiX3h87bZvaDcBPm354xLV4Dbsa8RupxJ85q/bwScFCHyF447lujj9BVd5Zs+Uru+X2hKkZ4yKBtoALoCiH8AxNDtH2JuEO6PiJ5eST8BrIS6134sRgwAAAAASUVORK5CYII=" alt="eye" />
+            </div>
+            <h3>Изысканность</h3>
+            <p>
+              Наши изделия из меди являются очень практичными. В то же время они
+              наполнят особой магией ваш дом или рабочее....
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP3SURBVHgBvVntcdswDIV7/V9tEGaCOBvIG7gTxJ0gygRWJ7A7gZUJnE6gdAJnA6kTOJ2ABazHiGFIiZLlvDucLIEfDyAIggnRmdBaJywZy56l0i2OLCVLzqJoAsxoJIQkPzYsK5ZXlheWPyw1miiWG5Y5fhcsP2ezWU2fCSaawnNHeC6xdInrSX5fWV5f02eBJ7vDpHubpKXfsjwF+uafRhgeFeQdbQqWQ4feEM7oUpClxVLuPTpZ+jXCwkbJMve030Kv6BLggTcgq8hvxBEkVliBzIrTzGOc6EqaClZaKjHpxtNm5zPC0p+86PluQqqCgYrOILm2lvUYWjaJz9CGstrMA9+PTujsBpGGxZW20hIGOQTal744jpyrQH+FuSrj6ZjOa91uDOUQ6ktHEi4JDQD6HK13BQO8Iecjmnt0le5OV1trKSsYJxtySd1kV4F4PhkhKxrsFCIEAlvqnlhhHCG+Rywb8ooGkIUu/eBh3aaeXQeRskvfY8DJ0wF9boeBR5+BsDIfVu8++DuJtyoaATcuHd1e9+RahMPWvJS6P/WYJUlpHFlfXCYgkvX0b72PDnlPhyQU8FiZUB4NhkHMiqLdEu0Swo8V9UC3KUo530t8l+cG7UR2uk36KmBE7z6wVvVqCFlznh+0k0/hJTsDaLTdav+pZ24ValKy8FKJ33N46gNhq32hOzaNbvP5Eu/B+tcl+4X6oSDEVxK5uizwfgh45jUwaQIjcpYHHssQFKO/UQRiyL4DCBfUEK60U3ywPmNZOCTlZiCpL2V5Yf2WRuCr+wEh8QJSISxB+C/LHYvEbE3NpbFGG/HYHCLe/oVv92IAjx9aAcWPlPWFq/N5Via/pwB0k6YUyyMPmLNc8+/vLL9BZgmZg/wPlmtpy0/j0ZTCWLF4s8RXGg6zsd5ONMTfU19HuYbr5nxQNAKDY9aa6B+NQ02twYMwhuwJoZi7JEaTjQVOtVGedHFRstjZUqjMaQKMIXtF5+OGRiCaLIoPSUniqYLG45FliWNXUeTpJYhNXYraVPXM8mAUiEepN297DpITJN+iTw4xY/Yi1rOy8xcgtHAyQeI8eyFHMj+uMWavgQaxnn3lCZ5jGuqmkJ9z+86bLf5OK4dEdAqM8axsqJrioWhAHFJTX0RlixDZBLWrXINTajbFpVBgPinIU+owNBQGphiRJXrwVUBTQcKLSUohJI7pvOmGPCv/G7ilploaVXsOgRRCqN5kwwVXMUS2kjQUef6bWrX2kKhDOh+wiYNtTRiMPrthUNahz2gq4Aot15Mlio7OC2TEeJ0Xxoj+b3/jAie561VGae7wBjmdgXPJYozcudIrt4GaqpSbYhzt+X/af8/yBrBkCdz5AAAAAElFTkSuQmCC" alt="eye" />
+            </div>
+            <h3>Честная оплата</h3>
+            <p>
+              Мы стремимся предоставить лучший товар по лучшей цене с сервисом
+              высокого уровня. Но все начинается c....
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOxSURBVHgB1VmLkZswEF3fpAA6sNIBqSBcB04HdHDuAK6Cuw5wKrA7IKmA6wB3wKWCjdY8HYsMhJ8T583sGJC0etqfBCaaAWYOrBy5RmYlonuEJVZYqazsrZQgLMQN3QssmR2IRepZrAgndA+wREJYs+hoS0G2uAvrgqzgpaethBj610B8tkJAtRkQLXrGSjK+wPK3DxU7SS7S0+asnna0ZQif41+Ja7Fmn1XRnoJQ4D0/ugWquL45WSHy2tMWgMTee1bgeXxzsrDmC4hmA/1yxGuGcChwv9fJpshGtBJBg0kZJFPftR39D9zU2dIjKGGQoJ9gR0vBdbGvIPHEsVkHSaMWcLWIuSQTKDsMWXBgfG7l1EGyRBjFc/T2kUxpJpT7jWfJPa0Bbvb2lBagx82ujoa0BEr5kVYCFv7hZm6qwHy3dyXA2oAxqj95bDOkwP6UVp43m02KWFoW7Nc4W90HkHyy8tnev3d1/DSgJMLvAaVITkpnWhcGBpGdTYiKMVKaAl1O4P6MVgaSqcC1GCSfqsDt0RL07hS0U+07bnaUoGN8iPg+8sDGwM2hZou5eFJSKQWhr4Cbra7oSgLVXsIrzD210jOIGxd19X3o4epWdbZiqA56F+QRfh+t/LDy1RuboL8khvT5TnX86YVc3gyg083h9BuaShSKDLWT6ASlUhEkHH56YzfUTHrh5t1fyCgXS9u2L9sdhrK+pfiDhVVoJ/liL2Mrb/b+5PU9WMmRfO/o96zGn+3PN2/ML5oDbrbNLdfnxkq1+af1rmSK1Y6T4lmI5Mq5fYJyR8Xpxzwd2B5pF/yh6lvwiIMFSDvylTfPjlUC0xSolQa43uN55PUL0Uck4bos7XoWHnNzEgtYVRTMVdFUsCrAPPC2qfpnWFDuvOG1u+eM+G1tJLD2iaZCuSJS17FqT7gda0LkyKo2dujcOWsra0bcsalMJVsqqx5hMaOIRaqv+yBRef3CDr3Gs2Ym9zQXrD6IwVIlXBT09I9ZvV0qS+nkc3pKEI77PDCVbO4sxO33HDNyvCZpPJItyy4lGvQo/6gEI3UkGFPOXfSYiXxLyMQHuOxiERce3hgJHfeRQvCKseuT9CZ2FonVswO3X9p8VCBoMOZJW3bs/BuaAK4rgMScWO5s5RF7t4tFQ83JS/b5N9UubRKLkWp7pJEYeyjRkKIsR7dEkZLDxptMPjDOgKCQi61s6VZABVicoTzjteOB/hNMdb24LuKlxbl+KzjTrcDXn2XmYvK/Jr8BY6vG/L2rBJQAAAAASUVORK5CYII=" alt="eye" />
+            </div>
+            <h3>Большой ассортимент</h3>
+            <p>
+              У нас есть все от миниатюрных настольных паровых дистилляторов
+              эфирных масел до крупногабаритного оборудования...
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJiSURBVHgBpVeBlZswDDV9HYANSjegExzdICPQCcoG4SYgG7idILkJuJuA24BsQDbQyZfvIByD7Zze03OwJf1v2ZadTEUIEeXc7FifWEtW812wXljP0DfWU5ZlZ/VVYcCCtWOdaCk9VKMdnbFKPSrs/FcAHllrB4Aw3sC+ZD0IG22IpwDmYG3ZF04GDIEW7WDAPTFa+BsSZSzoAKcmYFthxsPKeAHgKQguZlqrMMmjWIYJqj0ZsuDFWqC9SE8RAdzQLAb8n88f4Aa49wUpaCnGOY8Az6WdSL9eIdm4ATQGCmH0QyUISHTwPXjGe5DK3dlqYTAmAFqyo0h77rGrML6zHTU6KnwbOUUC9s7yVAGfea2R5kkMDgjS0MYmo2uxMNJSZKWi6wacJFDvzGQQM9k7zr0YI5UgJPcPeXahIHC8GarFOmmQOyQC7+yyflPXm+ZOcMs84/O3M3zh8V+sm9XNIxf747v88IC/M7sz/9wjq6+s/1lNygz4s3pUsJFOG+MlLW8luf61SsOyJ6g0M35nrdaMzay5+Ymda/RJPS7lLSY9XqnC1929z+0Emc1l0/xHpUmOM7yLMQZRoy+ysydZR8NBfJdKHfDRsC1kpz2frYoD7gFW4myO8O8CRPVaMKJwvd37SNL83Omc/hzERvKVYJpfC36DJbm1544FP9oYNFe/Wm3MpsRa34HTXO5atSEC/JNgjI8EH0k8XdGvESTmZVIL8FbFikg7obVv6iHgVwmChnjUUVtjPtJSOqS9QlujT9odKPJoxhCwz9g16bG+UYCZShS6ViAZ/POPG9ffi0qQD1C4sgWQzkD6AAAAAElFTkSuQmCC" alt="eye" />
+            </div>
+            <h3>Доставка по всему миру</h3>
+            <p>
+              Вы можете получить нашу продукцию в кратчайшие сроки в любую точку
+              земного шара.
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU4SURBVHgB1VmBleI4DPXc2wLSwboEOth0cFwFk61g6IB0AFdB6IC5CjJXAdNBpgOmA21EJPwtHEiAMLv/vbzEtixLsmTLjnMTgojm7bNvn6Z9CvenoRXat8+WOqgijIrb3O+OVsi8fVYiPKMWpfjZUMDvp5AIuRChCRTIE7R5gq54uFLtgJn4/UKs2oBQPAtrVKD9fknFiCi0oTBzJDRb4Z27KWEE18HXIlgGyi6AFmMkUkjo56LUzvJ2U0BciMRqR8Gh3cYHv0tRLJNvVKiylhe6nMJC8d3dGzIIo4K6QgZFF6llRrIePoWx/l54FEBzUMRNBbFkI9/eCF/SCN9uaWfSpwY+M2ljRXduKlBYQjMRhFG6GyEzSOqy8v06hsdfbhze5Z0/PT3x92f7/ACBMncd/mZeLc835i11oxQZBXCntZQ1KHXFathVruT5KuVKyt5NCfHpvXzn6F7g74NnRoKfNNjFGNPFBwxcGn/ewwKgiq1G8GsS/RduakAw1lIujUVrghXoAq/CzGj1ELcCAVRYj7NCYUM7KnqBTyOPJpaMyj0KIGwl5dJYdn3Jxdq2Zc9s5O6Ogl7MSGFWcik3MjO4qTGyRF+1vt1ctxfGnNGYA9qQKaawIdam3IiLeUrEibQ16prORcmovzDmhon6Gl/EejWFgD0oIoMupX1nBQMXWkh5ccmyFPaeUspLLAOdF5n4WREczmCsrci1VKHtuUDfe9NenbHuzChXJZSopG0NwupYWcr6RgZ11x3UHZ7IjSgELSqV4ywlhJtRWLW8EaJKKLEBJRrp6xN80fpzOj0LrcWQHV1iwDUQe6hPKiJtBShulVG3TCnBWPTwjOKBwkrJKE/opOEVGnS6a8O4VxFpLxPKlHZwo0R5hp8aIoO6XcLAW1Wkpm56sz6haWDq0KMM952NUUJoj6m9Vc7QMb8ddlhB41ERM7h3FwD82DgF1D9TCNyLuRTFGYNPKUJhxSu0opaKHQhSC+F+iAWNEDOKL+W2MFP5CD4L6FeCnHj9VNtOGOQIVmTuRoJOL+V44NEHL+oWkqZHrjLJk+Kk740GZLADBMnpDvkTxbcr80FGEW1HnfQeAYJDnUXfmZ3P4h4YZNe4xa1IjMvfH2MYHM/i4usa8M/uQaCwyh0yarrmdoXi65lGvvW9dBODwrLaqJvTNcdgipM5RkUD0ooJlPAUNtmTXX0ow5oC5lKHid7dY4YS2TB1K5Ri/AJEcZJWJOrvPivg0nOoK0AOP4ZZTqf/PmpoP7nMvhconSjWIMeOhvztAv/U6cVb86XQ6JF27e6viGYX34fKo/gGTHgXL113v/tT7nadaM9HV00HPqXLG/Rlph74Ms3/LY9XI2juuntejK/3lu5f+Wb6Fx5flClEnn9amg+QpxZ5/lM5cRDNNk9yK2nbonWgDYPRoqFwZ1WfocuBH1p9Q6dH4GeQ07sUKM5al6ZtbgQsTP0CaO2yqTzXFB+KojMHhX+OisLI8ALjn88DKd4vGrEklheJcjI3ozijLhPtav05hRnbJ8aoKSjY0NDVi8IPTbVmQ5AyG4sjlgk+BwES9SvTd58YYwMy7KgvbW/x5G6AWKZ03c8eL9UfrgtQXRQ03jTwWZDchYBnOg72dRu4n+6rQeeDuQ87+oKsuhcUXwflFG9o3QVaTI/J6OjT52Qg+D1g6nGly02bTyn5ZSDz+83UNxTW/JSiumDcfKT+5m6HutEPCvnXTB4O3p9Cw9dNrMybC6c8D+9395Wg+CJbwTNQUbz56XK6TwS8dzfiF8i07pNg+BFqAAAAAElFTkSuQmCC" alt="eye" />
+            </div>
+            <h3>Гарантия качества</h3>
+            <p>
+              Наше оборудование прозводится вручную. Мы постоянно производим
+              контроль качества произведенной продукции.
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARpSURBVHgBzVmBlZswDNX1dQA6Qd0Jmk5QboLmJjg2SDYInSDpBOEmyHUCrhPQTuB0Am4D1Qb5LBRDMEeu+e/pBWwhviVZAgIwMxBxY6TGLjYwM25gRhiCifmpjTwZ+UXDX42kRj7c3Nw8wzXCEFfk4ZyN5TT2Ea4RhtjKiCaSNR1rljZ6zpSZJVVYivwmCSE1ouDaUoZ5exOY2zivw7WB8rsggqkYtzhQZP4LuYSTCsw7kms2tqaxxcB1i9hFvYM4ZEbKEZssCRzXIUWyVZHty4A8XpEHs8B8VDm0NmiugEhEeZyqwa2RByNzVAZr44exm0Ek3o9VJA8rI8eBG63o9whdchZ3RnZc2dh5ND+PwnYBc4KVOx2YU2y+FHM2vUrWhNIY2xcDI2075HJAL2UEU5gD9oYkCiKBvrWrEbp8kVHljyKXvTjHHGzRQ8cYZDU6i7hmISvPyOs047kFOtiTx6PCSMZKiATlfB2hnxI366imO7ty+BfaZ2hbAZZjjUFbCR7EuAtpShJKQXuN1VvAONzTbwGuYvGwxXgCffNYsDGFp28/SGNSb3SK8cgiNTTZgL5D64kcxoMvdA9t1G7JlpUvNLeFCcD2kUCBiKxtQEcjTTs2xf/JKD6Zw41dpTl/gHg8WzvQpp67ueyyowqAuc6mSG6kYI3pc8PZTO6QlSfKUU2hvB8wupDhRl9lDpQOCn3z4XrZuUJg70062u0RlmJ7vmNzdpF7mOrkZsB4jaedMhe5bbEWOiUOdElGsEJWnrGtfugWYgcKFE0BfbPQjjx5WQVI3gduXFA0lZhbBSKgnPfRd1gt7uW9HRjcBghoFjKHDdNxkUnhDIhUzb2N/rWOR6hDGkLeZhM7SYqRL2nO5vCBjtPA4jYYaP3Ypt5WkkLf9Ars7o9EXL+huRx6PFL0kHeLStBvXo1+Qyt2rcZwyiF5LRHjmmy6qO96SBcwhBB5ZC1XnB/EtSkjvybRPEJMd0/jis4zqTea9BnynQrCopBjdxOl2N0PFZ6+9bu0ydm4TRE9mTS7MOfk2bliOiUjuBdziThfCP1SLKaxIUjnMAWcPBGp8bS2KvK+5gsVdlwJrMlmIhaoaU69mjQz7NLG5qvLQ42n5YpvUJ5ijsgOT6sF37hLtsAC5gD6TxIp+hy2HloHdHO20FWf97Bt6TWJtekeISqYC4Fwck9tA/ol+i+2+8C825yVsHcSyTnIKxQ5zry7FLquLFosxJxrOjs29uIUuATYTbecZI9uQ6Znjr9UOO9ncEmgr9/pGb0Sz7yPot/sOVwaGGj5PXpjiDd24K2AgWf4gE6Fw8/c2ZjIzQ4iVg7MIw68eI+JyBBiv4+PAtt8Nq36/m2z76EKJmIScSpbltzPHhVeAu96dP4YUTj+28rrgX1vI36+ZLW57NFJyMYe3gpDN0T2pIe+QSU9uk1phQmY9D8nts8Tlkzou8s3aFPlE53bynLs0W1ess03k0/wFsD2gUhjGJ2HL/J6n241Ncf/ATJEh4H5/6tMAAAAAElFTkSuQmCC" alt="eye" />
+            </div>
+            <h3>Удобство в использовании</h3>
+            <p>
+              Наши изделия из меди имеют уникальный дизайн, который
+              разрабатывался нами с целью получения максимальной...
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASxSURBVHgB1VntcdswDKV7/V93gjATVJ2g6gT1BlUnqDNBnAnsTKBsYGcCeQOnE0iZQOkEKBE9hhBDfVpO3HeHk0VCIEACJEArdSYgothQRhVKQ6khrf4HGEUXnuLWkNzQXJ07oGguZ9z8TmDESp0rPLdZBvqtYemkK8EzhYHLsf4KGdZtstD3bJShA/gyNQUwsFR8KxTRA+Rs8F3nN4L3wu/7qIZjbYiX83I2mxUYQJvHwRAbswffre2fAJ/w/GzoUY0BZj7FTOwCfTm9xnWLvMhzoSayLrQNyfmgeipvHuyDiaEHQ3ceCyvKPFeqmqVLQ2zkigM1JNOsDsv5CnlteDJ0Y+iXGgty+3QS6IvRl3rtc8zugU54IPVaAVX5PONJNrJyqloZxr3sMzPMvDy7kaGcAtvkmwGzaX3c903eIaKG7zRW6IDVeL9TFcrcCQOsQZ1KUbWfU5Ohx2CmRoLjwjx4Z+Bgve9gf96NjFtdqnMCuQOmC2XTbnQsRq+ABXYY3cLCwVwgqNvk8CrFhq6wxZ4GiIXVlFsjKy9WKz9psJML3kl2FXJJHach9rxZq2NgBPzGThN57YkY7PiBKpkZZOnQ+xiBNtt8Xk6vL7dtwgitRoICRYtYkXHpM7mEbSOFi8ESb6CNGommSaDqvKFRLorZ3wV+Pxvk8R5Gz5R6cZc80L6CARddMppyoU+wnrc+m4s/QbiMC62OA+f2OjDTVvG/aijIHfvU4DI53Gkr+8eAXCZ7gHzOua7RlvYVMocgpgjvm5ByIg5IxscxEO4icaC+/k8uqwwhw4rEgr+xNjjCCC30WLTwRJhESzHXxFxFafDNQV/wZH+PIYBjYG+oUP0Vi/E9+zT7+4NJE3Y+H9fOhvcPj8f9mH0e+weekXI1icTDR/PBXrUrEQlhsRD0w/QVoe+p2hZT8Pt9harynV3DeJmnMPMz7yN+F4K9UEMBF7oTbpZLd6L6tctLzoT2hFwq8hPtHHtrcoenva5h3jm+mz43CiiUi/eS2qs0y5NRPd5iqSy5TSOnEyd40hBG2sJrS0wSqzRX7YYy1k0CM3J3kDmEc9sWS1vbhbwBtiSuBUMrIvjnkNequOC3WznvPNZlL0KMss7NhEElvUYGg+TslHKJoejKMyQV8lIadp24IHdoDqupyR1ySwjJPYOW5E7udeD7VPDyt/GAsbU33uik0RdsAysVbRnaYrzHVP+3pdVdOoxg7Jp4BtfEVGWPWoUvd/mws4ch/741tOmqh0OKq+oM4SfXyoWQLbEfdDtNVVBqQzfy5hkn6S0GYzwY+t5XcawOpxDf8AytFrcVgbb+QByUDX32LpS84I1a5PmHGMH1NnBVraYEhB9a+u0WnFA9SbTGLMidrpmndEJ04qvHthVA//PpKt41Argp4x0V3KNBbgdaBvqu0Zc0fLsg5yrZ5O7RF2I2U3KFkD1hQ/WtrLJKes9rdijEbnEXcIeMXt8uLKh+La/VuYCqHCWnQOZJ9YMspwmrt0lB4loEK3NN9bz+bYN0CMjVsSXVcxY2avlWis/MQL9VVcL1gQbZdMGCT17+k2PfVaJOjRm53KYLT4JYYS7CC1UpPSjXmRL/AMo9eqKmRi7CAAAAAElFTkSuQmCC" alt="eye" />
+            </div>
+            <h3>Забота об окружающей среде</h3>
+            <p>
+              От 2 до 5% от стоимости каждого приобретенного товара в нашем
+              магазине мы направляем на защиту....
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="wrapper_footer">
+          <div class="left_footer">
+            <ul class="list_left_footer">
+              <li class="item_left_footer">
+                <img src="/project-Ishop/assets/logo-9f025458.png" alt="logo" />
+              </li>
+              <li class="item_left_footer item_left_footer_desc">
+                © 2021 “Copper Pro” <br />
+                Все права защищенны
+              </li>
+              <li class="item_left_footer_politic">
+                Политика конфиденциальности
+              </li>
+            </ul>
+          </div>
+          <div class="right_footer">
+            <ul class="list_right_footer">
+              <h3 class="title_right_footer">Навигация</h3>
+              <li class="item_right_footer"><a href="#">Каталог</a></li>
+              <li class="item_right_footer"><a href="#">Новости</a></li>
+              <li class="item_right_footer"><a href="#">Доставка</a></li>
+              <li class="item_right_footer"><a href="#">О нас</a></li>
+              <li class="item_right_footer"><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="list_right_footer">
+              <h3 class="title_right_footer">Каталог</h3>
+              <li class="item_right_footer">
+                <a href="#">Для эфирных масел</a>
+              </li>
+              <li class="item_right_footer"><a href="#">Для гидролатов</a></li>
+              <li class="item_right_footer"><a href="#">Медная посуда</a></li>
+              <li class="item_right_footer">
+                <a href="#">Аксессуары из меди</a>
+              </li>
+              <li class="item_right_footer">
+                <a href="#">Индивидуальный заказ</a>
+              </li>
+              <li class="item_right_footer">
+                <a href="#">Скидки и предложения</a>
+              </li>
+            </ul>
+            <ul class="list_right_footer">
+              <h3 class="title_right_footer">Контакты</h3>
+              <li class="item_right_footer">
+                <a href="#"
+                  >Бажана 8-Б, Киев, <br />
+                  02132 Украина</a
+                >
+              </li>
+              <li class="item_right_footer">
+                <a href="#">+38 (096) 990 67 56</a>
+              </li>
+              <li class="item_right_footer">
+                <a href="#">a.alambik@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

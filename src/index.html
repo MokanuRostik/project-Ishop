@@ -5,20 +5,572 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+    <header class="header">
+      <div class="container">
+        <div class="header-liine">
+          <div class="logo">
+            <a href="#">
+              <img src="./img/desktop-image/header/logo.png" alt="logo" />
+            </a>
+          </div>
+          <ul class="nav">
+            <li class="item-nav animate__animated animate__flipInX">Каталог</li>
+            <li class="item-nav animate__animated animate__flipInX">Новости</li>
+            <li class="item-nav animate__animated animate__flipInX">О нас</li>
+            <li class="item-nav animate__animated animate__flipInX">
+              Доставка
+            </li>
+            <li class="item-nav animate__animated animate__flipInX">
+              Контакты
+            </li>
+          </ul>
+          <ul class="list-preference">
+            <li class="item-preference">
+              <img src="./img/desktop-image/header/heart.png" alt="heart" />
+            </li>
+            <li class="item-preference">
+              <img src="./img/desktop-image/header/user.png" alt="user" />
+            </li>
+            <li class="item-preference">
+              <img
+                src="./img/desktop-image/header/shopping-cart.png"
+                alt="shopping"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub_header">
+        <div class="container">
+          <div class="sub_header_line">
+            <h1 class="title">Хит продаж</h1>
+            <div class="line"></div>
+            <h2 class="sub_title">Дистиллятор для <br />эфирных масел</h2>
+            <ul class="list_sub_header">
+              <li class="item_sub_header">Цена</li>
+              <li class="item_price_sub_header">4 906 грн</li>
+            </ul>
+            <button class="btn_sub_header">Купить</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="our-products">
+      <div class="container">
+        <h2 class="title_products">Наша продукция</h2>
+        <ul class="list_products">
+          <li class="item_products">
+            <img
+              src="./img/desktop-image/photo-1.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Для эфирных масел</p>
+          </li>
+          <li class="item_products">
+            <img
+              src="./img/desktop-image/photo-2.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Для гидролатов</p>
+          </li>
+          <li class="item_products">
+            <img
+              src="./img/desktop-image/photo-3.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Медная посуда</p>
+          </li>
+          <li class="item_products">
+            <img
+              src="./img/desktop-image/photo-4.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Аксессуары из меди</p>
+          </li>
+          <li class="item_products">
+            <img
+              src="./img/desktop-image/photo-5.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Индивидуальный заказ</p>
+          </li>
+          <li class="item_products">
+            <img
+              src="./img/desktop-image/photo-3.png"
+              alt=""
+              class="img_product"
+            />
+            <div class="darken-overlay"></div>
+            <p class="desc_products">Скидки и предложения</p>
+            <p class="thirty_percent">-30 %</p>
+            <p class="fifty_percent">-50 %</p>
+            <p class="eighty_percent">-80%</p>
+          </li>
+        </ul>
+      </div>
     </section>
+    <section class="best_selling">
+      <div class="container">
+        <h2 class="title_products title_selling">Лучшие продажи</h2>
+        <ul class="list_selling">
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-1.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-2.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-3.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с<br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+        </ul>
+        <div class="wrapper-btn">
+          <button class="btn_selling">Перейти в каталог</button>
+        </div>
+      </div>
+    </section>
+    <section class="novelty">
+      <div class="container">
+        <h2 class="title_products title_selling">Новинки</h2>
+        <ul class="list_selling">
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-1.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-2.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с<br />
+                фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-3.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с<br />
+                фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="wrapper-btn">
+          <button class="btn_selling">Перейти в каталог</button>
+        </div>
+      </div>
+    </section>
+    <section class="special-offer">
+      <div class="container">
+        <div class="wrapper_offer">
+          <p class="desc_special_offer">1 + 1 = 3</p>
+          <p class="desc_offer">
+            Закажите два товара и<br />
+            получите третий бесплатно
+          </p>
+          <button class="btn_special_offer btn_selling">
+            Перейти в каталог
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="container">
+        <h2 class="title_products title_selling">мы рекомендуем</h2>
+        <ul class="list_selling">
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-1.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-2.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-3.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <p class="desc_selling">1 953 грн</p>
+            </div>
+          </li>
+        </ul>
+        <div class="wrapper-btn">
+          <button class="btn_selling">Перейти в каталог</button>
+        </div>
+      </div>
+    </section>
+    <section class="discount-section">
+      <div class="container">
+        <h2 class="title_products title_selling">Скидки</h2>
+        <ul class="list_selling">
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-1.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />
+                фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+            <div class="wraper_sale">Sale</div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-2.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с<br />
+                фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+            <div class="wraper_sale">Sale</div>
+          </li>
+          <li class="item_selling">
+            <img
+              src="./img/desktop-image/photo-3.png"
+              alt=""
+              class="img_selling"
+            />
+            <div class="purches_info">
+              <p class="price_selling">
+                Медный чайник с <br />фарфоровой ручкой
+              </p>
+              <div class="price_wrapper">
+                <p class="price_novelty">2999грн</p>
+                <p class="desc_selling">1 953 грн</p>
+              </div>
+            </div>
+            <div class="wraper_sale">Sale</div>
+          </li>
+        </ul>
+        <div class="wrapper-btn">
+          <button class="btn_selling">Перейти в каталог</button>
+        </div>
+      </div>
+    </section>
+    <section class="customer-feedback">
+      <div class="container">
+        <h2 class="feedback_title">Что думают о нас</h2>
+        <ul class="list_feedback">
+          <li class="item_feedback">
+            <h3 class="name_user_feedback">Елена Кузнецова</h3>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
+            <p class="message_feedback">
+              Мой новый чайник стал настоящим украшением кухни. Его элегантный
+              дизайн привлекает внимание, а функциональность и качество работы
+              делают приготовление чая легким и приятным процессом. Рекомендую!
+            </p>
+            <p class="date_feedback">02.01.24</p>
+          </li>
+          <li class="item_feedback">
+            <h3 class="name_user_feedback">Александр Иванов</h3>
+            <p class="message_feedback">
+              Чайник, который я выбрал, поразил меня своей скоростью нагрева.
+              Заваривать чай стало намного быстрее! Кроме того, удобство
+              использования и функции безопасности делают его отличным выбором
+              для ежедневного использования.
+            </p>
+            <p class="date_feedback">10.01.24</p>
+          </li>
+          <li class="item_feedback">
+            <h3 class="name_user_feedback">Мария Петрова</h3>
+            <p class="message_feedback">
+              Покупка этого чайника оправдала мои ожидания. Он не только отлично
+              справляется с своим основным назначением, но и имеет
+              привлекательную цену. Очень доволен своим выбором!
+            </p>
+            <p class="date_feedback">23.01.24</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="why-choose-us">
+      <div class="container">
+        <h2 class="title_choose_us">Почему выбирают нас</h2>
+        <ul class="list_choose_up">
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="./img/desktop-image/star-2.png" alt="eye" />
+            </div>
+            <h3>Аутентичность</h3>
+            <p>
+              Медное перегонное оборудование используется для получения эфирных
+              масел с незапамятных времен.
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="./img/desktop-image/eye-1.png" alt="eye" />
+            </div>
+            <h3>Изысканность</h3>
+            <p>
+              Наши изделия из меди являются очень практичными. В то же время они
+              наполнят особой магией ваш дом или рабочее....
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="./img/desktop-image/star-3.png" alt="eye" />
+            </div>
+            <h3>Честная оплата</h3>
+            <p>
+              Мы стремимся предоставить лучший товар по лучшей цене с сервисом
+              высокого уровня. Но все начинается c....
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="./img/desktop-image/flask-4.png" alt="eye" />
+            </div>
+            <h3>Большой ассортимент</h3>
+            <p>
+              У нас есть все от миниатюрных настольных паровых дистилляторов
+              эфирных масел до крупногабаритного оборудования...
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="./img/desktop-image/group-5.png" alt="eye" />
+            </div>
+            <h3>Доставка по всему миру</h3>
+            <p>
+              Вы можете получить нашу продукцию в кратчайшие сроки в любую точку
+              земного шара.
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="./img/desktop-image/shield-6 1.png" alt="eye" />
+            </div>
+            <h3>Гарантия качества</h3>
+            <p>
+              Наше оборудование прозводится вручную. Мы постоянно производим
+              контроль качества произведенной продукции.
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="./img/desktop-image/potion-7.png" alt="eye" />
+            </div>
+            <h3>Удобство в использовании</h3>
+            <p>
+              Наши изделия из меди имеют уникальный дизайн, который
+              разрабатывался нами с целью получения максимальной...
+            </p>
+          </li>
+          <li class="item_choose_up">
+            <div class="wrapper_choose_up_img">
+              <img src="./img/desktop-image/landscape-8.png" alt="eye" />
+            </div>
+            <h3>Забота об окружающей среде</h3>
+            <p>
+              От 2 до 5% от стоимости каждого приобретенного товара в нашем
+              магазине мы направляем на защиту....
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="wrapper_footer">
+          <div class="left_footer">
+            <ul class="list_left_footer">
+              <li class="item_left_footer">
+                <img src="./img/desktop-image/header/logo.png" alt="logo" />
+              </li>
+              <li class="item_left_footer item_left_footer_desc">
+                © 2021 “Copper Pro” <br />
+                Все права защищенны
+              </li>
+              <li class="item_left_footer_politic">
+                Политика конфиденциальности
+              </li>
+            </ul>
+          </div>
+          <div class="right_footer">
+            <ul class="list_right_footer">
+              <h3 class="title_right_footer">Навигация</h3>
+              <li class="item_right_footer"><a href="#">Каталог</a></li>
+              <li class="item_right_footer"><a href="#">Новости</a></li>
+              <li class="item_right_footer"><a href="#">Доставка</a></li>
+              <li class="item_right_footer"><a href="#">О нас</a></li>
+              <li class="item_right_footer"><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="list_right_footer">
+              <h3 class="title_right_footer">Каталог</h3>
+              <li class="item_right_footer">
+                <a href="#">Для эфирных масел</a>
+              </li>
+              <li class="item_right_footer"><a href="#">Для гидролатов</a></li>
+              <li class="item_right_footer"><a href="#">Медная посуда</a></li>
+              <li class="item_right_footer">
+                <a href="#">Аксессуары из меди</a>
+              </li>
+              <li class="item_right_footer">
+                <a href="#">Индивидуальный заказ</a>
+              </li>
+              <li class="item_right_footer">
+                <a href="#">Скидки и предложения</a>
+              </li>
+            </ul>
+            <ul class="list_right_footer">
+              <h3 class="title_right_footer">Контакты</h3>
+              <li class="item_right_footer">
+                <a href="#"
+                  >Бажана 8-Б, Киев, <br />
+                  02132 Украина</a
+                >
+              </li>
+              <li class="item_right_footer">
+                <a href="#">+38 (096) 990 67 56</a>
+              </li>
+              <li class="item_right_footer">
+                <a href="#">a.alambik@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
